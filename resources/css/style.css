@@ -191,3 +191,28 @@ header {
 .main-nav li a:active{
   border-bottom: 2px solid #f1c40f;
 }
+
+/*----------------------------------------------------------*/
+/* SURF GALLARY */
+/*----------------------------------------------------------*/
+
+.surf-gallery {
+  list-style: none;
+  width: 100%;
+}
+
+.surf-gallery li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.surf-photo {
+  width: 100%;
+  margin: 0;
+}
+
+.surf-photo img {
+  width: 100%;
+  height: auto;
+}
