@@ -1,0 +1,298 @@
+/*----------------------------------------------------------*/
+/* BASIC SETUP */
+/*----------------------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #555;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*----------------------------------------------------------*/
+/* REUSABLE COMPONENTS */
+/*----------------------------------------------------------*/
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.box {
+  padding: 1%;
+}
+
+/*----- HEADINGS -----*/
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #f1c40f;
+  content: " ";
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/*----- PARAGRAPHS -----*/
+
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+}
+
+/*----- PARAGRAPHS -----*/
+
+.icon-big {
+  font-size: 350%;
+  display: block;
+  color: #f1c40f;
+  margin-bottom: 10px;
+}
+
+/*----- BUTTONS -----*/
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #f1c40f;
+  border: 1px solid #f1c40f;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #f1c40f;
+  color: #f1c40f
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #d2aa0c;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #d2aa0c;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #d2aa0c;
+  color: #fff;
+}
+
+/*----------------------------------------------------------*/
+/* HEADER */
+/*----------------------------------------------------------*/
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  margin-top: 20px;
+  height: 100px;
+  width: auto;
+  float: left;
+}
+
+.main-nav {
+  margin-top: 55px;
+  float: right;
+  list-style: none;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 6px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+  border-bottom: 2px solid #f1c40f;
+}
+
+/*----------------------------------------------------------*/
+/* PACKAGES */
+/*----------------------------------------------------------*/
+
+.section-packages .long-copy {
+  margin-bottom: 30px;
+}
+
+/*----------------------------------------------------------*/
+/* SURF GALLARY */
+/*----------------------------------------------------------*/
+
+.section-gallery {
+  padding: 0;
+}
+
+.surf-gallery {
+  list-style: none;
+  width: 100%;
+}
+
+.surf-gallery li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.surf-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.surf-photo img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.surf-photo img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+/*----------------------------------------------------------*/
+/* HOW IT WORKS */
+/*----------------------------------------------------------*/
+
+.steps-box {
+  margin-top: 30px;
+}
+
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+}
+
+.steps-box:last-child {
+  padding-left: 3%;
+  margin-top: 70px;
+}
+
+.app-screen {
+  width: 40%;
+}
+
+.works-step {
+  margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+  margin-bottom: 80px;
+}
+
+.works-step div {
+  color: #f1c40f;
+  border: 2px solid #f1c40f;
+  display: inline-block;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  padding: 5px;
+  float: left;
+  font-size: 150%;
+  margin-right: 25px;
+}
+
+.btn-app img {
+  height: 50px;
+  margin-right: 10px;
+}
