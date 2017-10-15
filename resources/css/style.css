@@ -1,3 +1,7 @@
+/*----------------------------------------------------------*/
+/* BASIC SETUP */
+/*----------------------------------------------------------*/
+
 * {
   margin: 0;
   padding: 0;
@@ -12,24 +16,30 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+/*----------------------------------------------------------*/
+/* REUSABLE COMPONENTS */
+/*----------------------------------------------------------*/
+
 .row {
   max-width: 1140px;
   margin: 0 auto;
 }
 
-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/hero.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
+section {
+  padding: 80px 0;
 }
 
-.hero-text-box {
-  position: absolute;
-  width: 1140px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.box {
+  padding: 1%;
+}
+
+/*----- HEADINGS -----*/
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -37,11 +47,56 @@ h1 {
   margin-bottom: 20px;
   color: #fff;
   font-size: 240%;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 1px;
   word-spacing: 4px;
+  letter-spacing: 1px;
 }
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #f1c40f;
+  content: " ";
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/*----- PARAGRAPHS -----*/
+
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+}
+
+/*----- PARAGRAPHS -----*/
+
+.icon-big {
+  font-size: 350%;
+  display: block;
+  color: #f1c40f;
+  margin-bottom: 10px;
+}
+
+/*----- BUTTONS -----*/
 
 .btn:link,
 .btn:visited {
@@ -82,4 +137,57 @@ h1 {
 .btn-ghost:active {
   border: 1px solid #d2aa0c;
   color: #fff;
+}
+
+/*----------------------------------------------------------*/
+/* HEADER */
+/*----------------------------------------------------------*/
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  margin-top: 20px;
+  height: 100px;
+  width: auto;
+  float: left;
+}
+
+.main-nav {
+  margin-top: 55px;
+  float: right;
+  list-style: none;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 6px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+  border-bottom: 2px solid #f1c40f;
 }
