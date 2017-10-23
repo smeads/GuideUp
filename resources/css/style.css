@@ -96,13 +96,42 @@ h2:after {
   line-height: 145%;
 }
 
-/*----- PARAGRAPHS -----*/
+/*----- ICONS -----*/
 
 .icon-big {
   font-size: 350%;
   display: block;
   color: #f1c40f;
   margin-bottom: 10px;
+}
+
+.icon-small {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #f1c40f;
+  font-size: 120%;
+  /* secrets of text and icon alignment */
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -5px;
+}
+
+/*----- LINKS -----*/
+
+a:link,
+a:visited {
+  color: #f1c40f;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #f1c40f;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s, color 0.3s;
 }
 
 /*----- BUTTONS -----*/
@@ -292,7 +321,30 @@ header {
   margin-right: 25px;
 }
 
+.btn-app:link,
+.btn-app:visited {
+  border: 0;
+}
+
 .btn-app img {
   height: 50px;
   margin-right: 10px;
+}
+
+/*----------------------------------------------------------*/
+/* LOCATIONS */
+/*----------------------------------------------------------*/
+
+.locations {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.location-feature {
+  margin-bottom: 5px;
 }
