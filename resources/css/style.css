@@ -337,7 +337,7 @@ header {
 /*----------------------------------------------------------*/
 
 .locations {
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: #f4f4f4;
 }
 
 .box img {
@@ -389,4 +389,43 @@ cite img {
   border-radius: 50%;
   margin-right: 10px;
   vertical-align: middle;
+}
+
+/*----------------------------------------------------------*/
+/* PLANS */
+/*----------------------------------------------------------*/
+
+.section-plans {
+  background-color: #fff;
+}
+
+.plan-box {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  width:90%;
+  margin-left: 5%;
+}
+
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid #fff;
+}
+
+.plan-box div:last-child {
+  text-align: center;
+}
+
+.plan-price {
+  font-size: 300%;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: #f1c40f;
+}
+
+.plan-box ul {
+  list-style: none;
+}
+
+.plan-box ul li {
+  padding: 5px 0;
 }
