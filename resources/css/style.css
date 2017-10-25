@@ -411,8 +411,13 @@ cite img {
   border-bottom: 1px solid #fff;
 }
 
+.plan-box div:first-child {
+  background-color: #e6e6e6;
+}
+
 .plan-box div:last-child {
   text-align: center;
+  border: 0;
 }
 
 .plan-price {
@@ -420,6 +425,10 @@ cite img {
   margin-bottom: 10px;
   font-weight: 100;
   color: #f1c40f;
+}
+
+.price-per-plan {
+  font-size: 50%;
 }
 
 .plan-box ul {
