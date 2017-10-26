@@ -137,7 +137,8 @@ a:active {
 /*----- BUTTONS -----*/
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -148,7 +149,8 @@ a:active {
 
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
   background-color: #f1c40f;
   border: 1px solid #f1c40f;
   color: #fff;
@@ -162,7 +164,9 @@ a:active {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
   background-color: #d2aa0c;
 }
 
@@ -404,6 +408,7 @@ cite img {
   border-radius: 5px;
   width:90%;
   margin-left: 5%;
+  box-shadow: 0 2px 2px #E8E8E8;
 }
 
 .plan-box div {
@@ -411,8 +416,15 @@ cite img {
   border-bottom: 1px solid #fff;
 }
 
+.plan-box div:first-child {
+  background-color: #e6e6e6;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
 .plan-box div:last-child {
   text-align: center;
+  border: 0;
 }
 
 .plan-price {
@@ -422,10 +434,49 @@ cite img {
   color: #f1c40f;
 }
 
+.price-per-plan {
+  font-size: 50%;
+}
+
 .plan-box ul {
   list-style: none;
 }
 
 .plan-box ul li {
   padding: 5px 0;
+}
+
+/*----------------------------------------------------------*/
+/* CONTACT FORM */
+/*----------------------------------------------------------*/
+
+.section-contact-form {
+  background-color: #f4f4f4;
+}
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type=checkbox] {
+  margin: 10px 5px 10px 0;
+}
+
+*:focus {
+  outline: none;
 }
