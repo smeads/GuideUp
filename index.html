@@ -1,15 +1,37 @@
 <!DOCTYPE html>
-<html>
-  <head lang="en">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Surfup is a premium surf camp with the mission to bring surfing to as many people as possible.">
     <link rel="stylesheet" href="vendors/css/normalize.css">
     <link rel="stylesheet" href="vendors/css/grid.css">
     <link rel="stylesheet" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" href="vendors/css/animate.css">
     <link rel="stylesheet" href="resources/css/style.css">
     <link rel="stylesheet" href="resources/css/queries.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <title>Surfup</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="resources/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="resources/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="resources/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="resources/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="resources/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="resources/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="resources/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="resources/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="194x194" href="resources/favicons/favicon-194x194.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="resources/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="resources/favicons/manifest.json">
+    <link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="resources/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="msapplication-TileImage" content="resources/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
     <header>
@@ -17,12 +39,13 @@
         <div class="row">
           <img class="logo" src="resources/img/surfup-white-logo.png" alt="Surfup Logo White">
           <img class="logo-black" src="resources/img/surfup-black-logo.png" alt="Surfup Logo Black">
-          <ul class="main-nav">
-            <li><a href="#">Surf Camp</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Locations</a></li>
-            <li><a href="#">About</a></li>
+          <ul class="main-nav js--main-nav">
+            <li><a href="#packages">Surf Camp</a></li>
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="#locations">Locations</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
+          <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
         </div>
       </nav>
       <div class="hero-text-box">
@@ -32,14 +55,14 @@
       </div>
     </header>
 
-    <section class="section-packages js--section-packages">
+    <section class="section-packages js--section-packages" id="packages">
       <div class="row">
         <h2>Come learn to surf and grab your first wave</h2>
         <p class='long-copy'>
           Lorem ipsum dolor sit amet, vivamus imperdiet eu, duis lobortis. Ut suspendisse nec in sit aliquam. Urna a lorem sit libero venenatis. Sed sit felis nascetur morbi pretium amet.
         </p>
       </div>
-      <div class="row">
+      <div class="row js--wp-1">
         <div class="col span-1-of-3 box">
           <i class="ion-ios-paw-outline icon-big"></i>
           <h3>Day camp</h3>
@@ -64,7 +87,7 @@
       </div>
     </section>
 
-    </section class="section-gallery">
+    <section class="section-gallery">
       <ul class="surf-gallery clearfix">
         <li>
           <figure class="surf-photo">
@@ -111,13 +134,13 @@
       </ul>
     </section>
 
-    <section class="section-steps">
+    <section class="section-steps" id='how-it-works'>
       <div class="row">
         <h2>How it works &mdash; Simple as 1, 2, 3</h2>
       </div>
       <div class="row">
         <div class="col span-1-of-2 steps-box">
-          <img class="app-screen" src="resources/img/iphone-app.jpg" alt="Surfer walking the beach with board in hand">
+          <img class="app-screen js--wp-2" src="resources/img/iphone-app.jpg" alt="Surfer walking the beach with board in hand">
         </div>
         <div class="col span-1-of-2 steps-box">
           <div class="works-step">
@@ -139,11 +162,11 @@
       </div>
     </section>
 
-    <section class="locations">
+    <section class="locations" id="locations">
       <div class="row">
         <h2>We're currently surfing these locations</h2>
       </div>
-      <div class="row">
+      <div class="row js--wp-3">
         <div class="col span-1-of-4 box">
           <img src="resources/img/malibu.jpg" alt="Malibu peir beach">
           <h3>Malibu</h3>
@@ -242,7 +265,7 @@
       </div>
       <div class="row">
         <div class="col span-1-of-3">
-          <div class="plan-box">
+          <div class="plan-box js--wp-4">
             <div>
               <h3>Summer Camp</h3>
               <p class="plan-price">$200 <span class="price-per-plan">/month</span></p>
@@ -301,69 +324,72 @@
       </div>
     </section>
 
-    <section class="section-contact-form">
-      <div class="row">
-        <h2>We'd love to hear from you</h2>
+    <div class="map-box" id="contact">
+      <div class="map"></div>
+      <div class="form-box">
+        <div class="row">
+          <h2>We'd love to hear from you</h2>
+        </div>
+        <div class="row">
+          <form class="contact-form" action="#" method="post">
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label for="name">Name</label>
+              </div>
+              <div class="col span-2-of-3">
+                <input type="text" name="name" id="name" placeholder="Your name" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label for="email">Email</label>
+              </div>
+              <div class="col span-2-of-3">
+                <input type="email" name="email" id="email" placeholder="Your email" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label for="find-us">How did you find us?</label>
+              </div>
+              <div class="col span-2-of-3">
+                <select name="find-us" id="find-us">
+                  <option value="friends" selected>Friends</option>
+                  <option value="search">Search engine</option>
+                  <option value="facebook">Facebook</option>
+                  <option value="instagram">Instagram</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label for="news">Newsletter</label>
+              </div>
+              <div class="col span-2-of-3">
+                <input type="checkbox" name="news" id="news" checked> Yes, please
+              </div>
+            </div>
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label for="message">Drop us a message</label>
+              </div>
+              <div class="col span-2-of-3">
+                <textarea name="message" placeholder="Your message"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label>&nbsp;</label>
+              </div>
+              <div class="col span-2-of-3">
+                <input type="submit" value="Send it!">
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
-      <div class="row">
-        <form class="contact-form" action="#" method="post">
-          <div class="row">
-            <div class="col span-1-of-3">
-              <label for="name">Name</label>
-            </div>
-            <div class="col span-2-of-3">
-              <input type="text" name="name" id="name" placeholder="Your name" required>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col span-1-of-3">
-              <label for="email">Email</label>
-            </div>
-            <div class="col span-2-of-3">
-              <input type="email" name="email" id="email" placeholder="Your email" required>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col span-1-of-3">
-              <label for="find-us">How did you find us?</label>
-            </div>
-            <div class="col span-2-of-3">
-              <select name="find-us" id="find-us">
-                <option value="friends" selected>Friends</option>
-                <option value="search">Search engine</option>
-                <option value="facebook">Facebook</option>
-                <option value="instagram">Instagram</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col span-1-of-3">
-              <label for="news">Newsletter</label>
-            </div>
-            <div class="col span-2-of-3">
-              <input type="checkbox" name="news" id="news" checked> Yes, please
-            </div>
-          </div>
-          <div class="row">
-            <div class="col span-1-of-3">
-              <label for="message">Drop us a message</label>
-            </div>
-            <div class="col span-2-of-3">
-              <textarea name="message" placeholder="Your message"></textarea>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col span-1-of-3">
-              <label>&nbsp;</label>
-            </div>
-            <div class="col span-2-of-3">
-              <input type="submit" value="Send it!">
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
+    </div>
     <footer>
       <div class="row">
         <div class="col span-1-of-2">
@@ -395,6 +421,8 @@
     <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
     <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js"></script>
     <script src="resources/js/script.js"></script>
+    <script src="vendors/js/gmaps.js"></script>
   </body>
 </html>
