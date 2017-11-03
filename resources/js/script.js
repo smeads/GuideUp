@@ -29,7 +29,7 @@ $(document).ready(function() {
     .click(function(event) {
       // On-page links
       if (
-        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
         &&
         location.hostname == this.hostname
       ) {
@@ -56,5 +56,12 @@ $(document).ready(function() {
           });
         }
       }
+    });
+
+    // Animate on Scroll
+    $('.js--wp-1').waypoint(function(direction) {
+      $('.js--wp-1').addClass('animated fadeIn');
+    }, {
+      offset: '50%'
     });
 });
