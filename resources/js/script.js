@@ -84,7 +84,7 @@ $(document).ready(function() {
     $('.js--nav-icon').click(function() {
       var $nav = $('.js--main-nav');
       var $icon = $('.js--nav-icon i');
-      
+
       $nav.slideToggle(200);
 
       if ($icon.hasClass('ion-navicon-round')) {
@@ -93,6 +93,22 @@ $(document).ready(function() {
       } else {
         $icon.addClass('ion-navicon-round');
         $icon.removeClass('ion-close-round');
+      }
+    });
+
+    var map = new GMaps({
+      div: '.map',
+      lat: 34.3025871,
+      lng: -119.215,
+      zoom: 12
+    });
+
+    map.addMarker({
+      lat: 34.3025871,
+      lng: -119.3189994,
+      title: 'Ventura',
+      infoWindow: {
+        content: '<p>Surfup Ventura HQ</p>'
       }
     });
 });
